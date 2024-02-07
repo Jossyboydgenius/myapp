@@ -329,90 +329,87 @@ class _MyAppSTFState extends State<MyAppSTF> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              if (currentState == 'Greater Accra') {
-                currentState = 'Accra';
-              } else {
-                currentState = 'Greater Accra';
-              }
-            });
-            // currentState = 'Accra';
-          },
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'assets/images/dash.jpg',
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            if (currentState == 'Greater Accra') {
+              currentState = 'Accra';
+            } else {
+              currentState = 'Greater Accra';
+            }
+          });
+          // currentState = 'Accra';
+        },
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/dash.jpg',
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Text(
+                'TechApostle with the doings $currentState',
+                // 'TechApostle with the doings',
+                style: const TextStyle(
+                  fontSize: 16, // Adjust the font size as needed
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Nunito',
+                ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
-                child: Text(
-                  'TechApostle with the doings $currentState',
-                  // 'TechApostle with the doings',
-                  style: const TextStyle(
-                    fontSize: 16, // Adjust the font size as needed
-                    fontWeight: FontWeight.bold,
+            ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                ),
+                SizedBox(width: 5.0),
+                Text(
+                  'Like',
+                  style: TextStyle(
+                    fontSize: 15, // Adjust the font size as needed
+                    fontWeight: FontWeight.w900,
                     fontFamily: 'Nunito',
                   ),
                 ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Image.asset(
+                'assets/images/dash.jpg',
               ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                  ),
-                  SizedBox(width: 5.0),
-                  Text(
-                    'Like',
-                    style: TextStyle(
-                      fontSize: 15, // Adjust the font size as needed
-                      fontWeight: FontWeight.w900,
-                      fontFamily: 'Nunito',
-                    ),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                      ),
-                      SizedBox(width: 5.0),
-                      Text(
-                        'Like',
-                        style: TextStyle(
-                          fontSize: 15, // Adjust the font size as needed
-                          fontWeight: FontWeight.w900,
-                          fontFamily: 'Nunito',
-                        ),
-                      ),
-                    ],
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10.0),
-                    // child: Image.asset(
-                    //   'assets/images/dash.jpg',
-                    // ),
-                  ),
-                  Text(
-                    'TechApostle with the doings',
-                    style: const TextStyle(
-                      fontSize: 16, // Adjust the font size as needed
-                      fontWeight: FontWeight.bold,
-                      fontFamily: 'Nunito',
-                    ),
-                  ),
-                ],
+            ),
+            Text(
+              'TechApostle with the doings $currentState',
+              style: const TextStyle(
+                fontSize: 16, // Adjust the font size as needed
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Nunito',
               ),
-            ],
-          ),
-        ));
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Image.asset(
+                'assets/images/dash.jpg',
+              ),
+            ),
+            Text(
+              'TechApostle with the doings $currentState',
+              style: const TextStyle(
+                fontSize: 16, // Adjust the font size as needed
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Nunito',
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
 
     //   child: const Icon(
     //     Icons.add,
