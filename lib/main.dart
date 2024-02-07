@@ -370,6 +370,7 @@ class _MyAppSTFState extends State<MyAppSTF> {
                 SizedBox(width: 5.0),
                 Text(
                   'Like',
+                  semanticsLabel: 'Love',
                   style: TextStyle(
                     fontSize: 14, // Adjust the font size as needed
                     fontWeight: FontWeight.w900,
