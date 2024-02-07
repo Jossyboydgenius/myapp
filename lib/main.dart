@@ -340,106 +340,162 @@ class _MyAppSTFState extends State<MyAppSTF> {
           });
           // currentState = 'Accra';
         },
-        child: const Icon(
-          Icons.add,
-        ),
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Image.asset(
-          'assets/images/dash.jpg',
-        ),
-        // const Text(
-        //   'TechApostle with the doings',
-        Text(
-          'TechApostle with the doings $currentState',
-          style: const TextStyle(
-              fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
-        ),
-        // const Column(
-        Row(
+      body: SingleChildScrollView(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.favorite,
-              color: Colors.red,
+            Image.asset(
+              'assets/images/dash.jpg',
             ),
-            const Text(
-              'Like',
-              style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.w900,
-                fontFamily: 'Nunito',
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Text(
+                'TechApostle with the doings $currentState',
+                style: const TextStyle(
+                  fontSize: 16, // Adjust the font size as needed
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Nunito',
+                ),
               ),
             ),
-            Center(
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.favorite,
+                  color: Colors.red,
+                ),
+                SizedBox(width: 5.0),
+                Text(
+                  'Like',
+                  style: TextStyle(
+                    fontSize: 14, // Adjust the font size as needed
+                    fontWeight: FontWeight.w900,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Image.asset(
                 'assets/images/dash.jpg',
               ),
             ),
-            // const Text(
-            //   'TechApostle with the doings',
             Text(
               'TechApostle with the doings $currentState',
               style: const TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Nunito'),
+                fontSize: 16, // Adjust the font size as needed
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Nunito',
+              ),
             ),
           ],
-        )
-      ]
-          //   body: Padding(
-          //     padding: const EdgeInsets.all(8.0),
-          //     child: Center(
-          //       // body: Center(
-          //       child: Container(
-          //           // height: 100,
-          //           // width: 100,
-          //           padding: const EdgeInsets.all(10),
-          //           margin: const EdgeInsets.all(10),
-          //           alignment: Alignment.center,
-          //           decoration: BoxDecoration(
-          //             borderRadius: BorderRadius.circular(20),
-          //             color: Colors.blue,
-          //             border: Border.all(
-          //               color: Colors.green,
-          //               width: 5,
-          //               // Container aspect
-          //               //   border: Border(
-          //               //     bottom: BorderSide(
-          //               //       color: Colors.green,
-          //               //       width: 5,
-          //               //     ),
-          //               //     left: BorderSide(color: Colors.green, width: 5),
-          //               //     top: BorderSide(
-          //               //       color: Colors.green,
-          //               //       width: 5,
-          //               //     ),
-          //               //   ),
-          //               // ),
-          //             ),
-          //           ),
-          //           // child: Image.asset(
-          //           //   'assets/images/dash.jpg',
-          //           // )
-          //           child: Image.network(
-          //             'https://docs.flutter.dev/assets/images/dash/Dashatars.png',
-          //           )
-          //           // child: const Text(
-          //           //   'TechApostle with the doings',
-          //           //   style: TextStyle(
-          //           //       color: Colors.white,
-          //           //       fontSize: 10,
-          //           //       // fontWeight: FontWeight.bold,
-          //           //       fontWeight: FontWeight.w900,
-          //           //       fontFamily: 'Nunito,'
-          //           //       ),
-          //           //   // w900 shows how bold it will be
-          //           // ),
-          //           ),
-          //     ),
-          //   ),
-          ),
+        ),
+      ),
     );
+
+    //   child: const Icon(
+    //     Icons.add,
+    //   ),
+    // ),
+    // body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+    //   Image.asset(
+    //     'assets/images/dash.jpg',
+    //   ),
+    //   // const Text(
+    //   //   'TechApostle with the doings',
+    //   Text(
+    //     'TechApostle with the doings $currentState',
+    //     style: const TextStyle(
+    //         fontSize: 10, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
+    //   ),
+    //   // const Column(
+    //   Row(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: [
+    //       const Icon(
+    //         Icons.favorite,
+    //         color: Colors.red,
+    //       ),
+    //       const Text(
+    //         'Like',
+    //         style: TextStyle(
+    //           fontSize: 10,
+    //           fontWeight: FontWeight.w900,
+    //           fontFamily: 'Nunito',
+    //         ),
+    //       ),
+    //       Center(
+    //         child: Image.asset(
+    //           'assets/images/dash.jpg',
+    //         ),
+    //       ),
+    //       // const Text(
+    //       //   'TechApostle with the doings',
+    //       Text(
+    //         'TechApostle with the doings $currentState',
+    //         style: const TextStyle(
+    //             fontSize: 10,
+    //             fontWeight: FontWeight.bold,
+    //             fontFamily: 'Nunito'),
+    //       ),
+    //     ],
+    //   )
+    // ]
+    //   body: Padding(
+    //     padding: const EdgeInsets.all(8.0),
+    //     child: Center(
+    //       // body: Center(
+    //       child: Container(
+    //           // height: 100,
+    //           // width: 100,
+    //           padding: const EdgeInsets.all(10),
+    //           margin: const EdgeInsets.all(10),
+    //           alignment: Alignment.center,
+    //           decoration: BoxDecoration(
+    //             borderRadius: BorderRadius.circular(20),
+    //             color: Colors.blue,
+    //             border: Border.all(
+    //               color: Colors.green,
+    //               width: 5,
+    //               // Container aspect
+    //               //   border: Border(
+    //               //     bottom: BorderSide(
+    //               //       color: Colors.green,
+    //               //       width: 5,
+    //               //     ),
+    //               //     left: BorderSide(color: Colors.green, width: 5),
+    //               //     top: BorderSide(
+    //               //       color: Colors.green,
+    //               //       width: 5,
+    //               //     ),
+    //               //   ),
+    //               // ),
+    //             ),
+    //           ),
+    //           // child: Image.asset(
+    //           //   'assets/images/dash.jpg',
+    //           // )
+    //           child: Image.network(
+    //             'https://docs.flutter.dev/assets/images/dash/Dashatars.png',
+    //           )
+    //           // child: const Text(
+    //           //   'TechApostle with the doings',
+    //           //   style: TextStyle(
+    //           //       color: Colors.white,
+    //           //       fontSize: 10,
+    //           //       // fontWeight: FontWeight.bold,
+    //           //       fontWeight: FontWeight.w900,
+    //           //       fontFamily: 'Nunito,'
+    //           //       ),
+    //           //   // w900 shows how bold it will be
+    //           // ),
+    //           ),
+    //     ),
+    //   ),
+    // ),
+    // );
   }
 }
