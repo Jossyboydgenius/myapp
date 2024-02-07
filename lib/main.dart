@@ -348,8 +348,10 @@ class _MyAppSTFState extends State<MyAppSTF> {
         Image.asset(
           'assets/images/dash.jpg',
         ),
-        const Text(
-          'TechApostle with the doings',
+        // const Text(
+        //   'TechApostle with the doings',
+        Text(
+          'TechApostle with the doings $currentState',
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
