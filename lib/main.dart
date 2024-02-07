@@ -352,11 +352,11 @@ class _MyAppSTFState extends State<MyAppSTF> {
         //   'TechApostle with the doings',
         Text(
           'TechApostle with the doings $currentState',
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
-        Row(
-          children: const [
+        const Row(
+          children: [
             Icon(
               Icons.favorite,
               color: Colors.red,
