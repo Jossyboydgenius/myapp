@@ -355,7 +355,8 @@ class _MyAppSTFState extends State<MyAppSTF> {
           style: const TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
-        const Row(
+        // const Row(
+        const Column(
           children: [
             Icon(
               Icons.favorite,
