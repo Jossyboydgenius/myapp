@@ -355,19 +355,22 @@ class _MyAppSTFState extends State<MyAppSTF> {
           style: TextStyle(
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
-        Row(children: const [ 
-          Icon(
-            Icons.favourite,
-            color: Colors,red,
-          )
-          Text('Like',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w900,
-            fontFamily: 'Nunito',
-          ),
-          )
-        ],)
+        Row(
+          children: const [
+            Icon(
+              Icons.favorite,
+              color: Colors.red,
+            ),
+            Text(
+              'Like',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w900,
+                fontFamily: 'Nunito',
+              ),
+            )
+          ],
+        )
       ]
           //   body: Padding(
           //     padding: const EdgeInsets.all(8.0),
