@@ -391,6 +391,20 @@ class _MyAppSTFState extends State<MyAppSTF> {
                 fontFamily: 'Nunito',
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10.0),
+              child: Image.asset(
+                'assets/images/dash.jpg',
+              ),
+            ),
+            Text(
+              'TechApostle with the doings $currentState',
+              style: const TextStyle(
+                fontSize: 16, // Adjust the font size as needed
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Nunito',
+              ),
+            ),
           ],
         ),
       ),
