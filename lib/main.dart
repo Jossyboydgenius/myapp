@@ -375,7 +375,12 @@ class _MyAppSTFState extends State<MyAppSTF> {
                   // ),
                 ),
               ),
-              child: Image.asset( 
+              // child: Image.asset(
+              //   'assets/images/dash.jpg',
+              // )
+              child: Image.asset(
+                'assets/images/dash.jpg',
+              )
               // child: const Text(
               //   'TechApostle with the doings',
               //   style: TextStyle(
