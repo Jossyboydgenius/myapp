@@ -344,16 +344,14 @@ class _MyAppSTFState extends State<MyAppSTF> {
           Icons.add,
         ),
       ),
-      body: Column(children: [
+      body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Image.asset(
           'assets/images/dash.jpg',
         ),
         const Text(
           'TechApostle with the doings',
           style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
+              fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
       ]
           //   body: Padding(
