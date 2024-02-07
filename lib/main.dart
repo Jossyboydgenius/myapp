@@ -371,7 +371,7 @@ class _MyAppSTFState extends State<MyAppSTF> {
                 Text(
                   'Like',
                   style: TextStyle(
-                    fontSize: 14, // Adjust the font size as needed
+                    fontSize: 15, // Adjust the font size as needed
                     fontWeight: FontWeight.w900,
                     fontFamily: 'Nunito',
                   ),
