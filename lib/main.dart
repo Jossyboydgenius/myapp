@@ -356,21 +356,35 @@ class _MyAppSTFState extends State<MyAppSTF> {
               fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
         // const Column(
-        const Row(
+        Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.favorite,
               color: Colors.red,
             ),
-            Text(
+            const Text(
               'Like',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w900,
                 fontFamily: 'Nunito',
               ),
-            )
+            ),
+            Center(
+              child: Image.asset(
+                'assets/images/dash.jpg',
+              ),
+            ),
+            // const Text(
+            //   'TechApostle with the doings',
+            Text(
+              'TechApostle with the doings $currentState',
+              style: const TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Nunito'),
+            ),
           ],
         )
       ]
