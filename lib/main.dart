@@ -388,7 +388,7 @@ class _MyAppSTFState extends State<MyAppSTF> {
               'TechApostle with the doings $currentState',
               style: const TextStyle(
                 fontSize: 16, // Adjust the font size as needed
-                fontWeight: FontWeight.w900,
+                fontWeight: FontWeight.bold,
                 fontFamily: 'Nunito',
               ),
             ),
