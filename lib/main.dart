@@ -329,86 +329,85 @@ class _MyAppSTFState extends State<MyAppSTF> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              if (currentState == 'Greater Accra') {
-                currentState = 'Accra';
-              } else {
-                currentState = 'Greater Accra';
-              }
-            });
-            // currentState = 'Accra';
-          },
-          child: const Icon(
-            Icons.add,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            if (currentState == 'Greater Accra') {
+              currentState = 'Accra';
+            } else {
+              currentState = 'Greater Accra';
+            }
+          });
+          // currentState = 'Accra';
+        },
+        child: const Icon(
+          Icons.add,
+        ),
+      ),
+      body: Column(children: [
+        Image.asset(
+          'assets/images/dash.jpg',
+        ),
+        const Text(
+          'TechApostle with the doings',
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
           ),
         ),
-        body: Column(
-          children: [
-            Image.asset(
-              'assets/images/dash.jpg',
-            ),
-            const Text(
-                    'TechApostle with the doings',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 10,
-                        fontWeight: FontWeight.bold,
-                    ),
-            ),
-          ]
-        //   body: Padding(
-        //     padding: const EdgeInsets.all(8.0),
-        //     child: Center(
-        //       // body: Center(
-        //       child: Container(
-        //           // height: 100,
-        //           // width: 100,
-        //           padding: const EdgeInsets.all(10),
-        //           margin: const EdgeInsets.all(10),
-        //           alignment: Alignment.center,
-        //           decoration: BoxDecoration(
-        //             borderRadius: BorderRadius.circular(20),
-        //             color: Colors.blue,
-        //             border: Border.all(
-        //               color: Colors.green,
-        //               width: 5,
-        //               // Container aspect
-        //               //   border: Border(
-        //               //     bottom: BorderSide(
-        //               //       color: Colors.green,
-        //               //       width: 5,
-        //               //     ),
-        //               //     left: BorderSide(color: Colors.green, width: 5),
-        //               //     top: BorderSide(
-        //               //       color: Colors.green,
-        //               //       width: 5,
-        //               //     ),
-        //               //   ),
-        //               // ),
-        //             ),
-        //           ),
-        //           // child: Image.asset(
-        //           //   'assets/images/dash.jpg',
-        //           // )
-        //           child: Image.network(
-        //             'https://docs.flutter.dev/assets/images/dash/Dashatars.png',
-        //           )
-        //           // child: const Text(
-        //           //   'TechApostle with the doings',
-        //           //   style: TextStyle(
-        //           //       color: Colors.white,
-        //           //       fontSize: 10,
-        //           //       // fontWeight: FontWeight.bold,
-        //           //       fontWeight: FontWeight.w900,
-        //           //       fontFamily: 'Nunito,'
-        //           //       ),
-        //           //   // w900 shows how bold it will be
-        //           // ),
-        //           ),
-        //     ),
-        //   ),
-        );
+      ]
+          //   body: Padding(
+          //     padding: const EdgeInsets.all(8.0),
+          //     child: Center(
+          //       // body: Center(
+          //       child: Container(
+          //           // height: 100,
+          //           // width: 100,
+          //           padding: const EdgeInsets.all(10),
+          //           margin: const EdgeInsets.all(10),
+          //           alignment: Alignment.center,
+          //           decoration: BoxDecoration(
+          //             borderRadius: BorderRadius.circular(20),
+          //             color: Colors.blue,
+          //             border: Border.all(
+          //               color: Colors.green,
+          //               width: 5,
+          //               // Container aspect
+          //               //   border: Border(
+          //               //     bottom: BorderSide(
+          //               //       color: Colors.green,
+          //               //       width: 5,
+          //               //     ),
+          //               //     left: BorderSide(color: Colors.green, width: 5),
+          //               //     top: BorderSide(
+          //               //       color: Colors.green,
+          //               //       width: 5,
+          //               //     ),
+          //               //   ),
+          //               // ),
+          //             ),
+          //           ),
+          //           // child: Image.asset(
+          //           //   'assets/images/dash.jpg',
+          //           // )
+          //           child: Image.network(
+          //             'https://docs.flutter.dev/assets/images/dash/Dashatars.png',
+          //           )
+          //           // child: const Text(
+          //           //   'TechApostle with the doings',
+          //           //   style: TextStyle(
+          //           //       color: Colors.white,
+          //           //       fontSize: 10,
+          //           //       // fontWeight: FontWeight.bold,
+          //           //       fontWeight: FontWeight.w900,
+          //           //       fontFamily: 'Nunito,'
+          //           //       ),
+          //           //   // w900 shows how bold it will be
+          //           // ),
+          //           ),
+          //     ),
+          //   ),
+          ),
+    );
   }
 }
