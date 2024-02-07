@@ -352,7 +352,7 @@ class _MyAppSTFState extends State<MyAppSTF> {
               padding: const EdgeInsets.symmetric(vertical: 10.0),
               child: Text(
                 'TechApostle with the doings $currentState',
-                // 'TechApostle with the doings $currentState',
+                // 'TechApostle with the doings',
                 style: const TextStyle(
                   fontSize: 16, // Adjust the font size as needed
                   fontWeight: FontWeight.bold,
