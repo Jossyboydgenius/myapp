@@ -378,12 +378,11 @@ class _MyAppSTFState extends State<MyAppSTF> {
             child: const Text(
               'TechApostle with the doings',
               style: TextStyle(
-                color: Colors.white,
-                fontSize: 10,
-                // fontWeight: FontWeight.bold,
-                // fontWeight: FontWeight.w900,
-                // fontFamily: 'Nunito,'
-              ),
+                  color: Colors.white,
+                  fontSize: 10,
+                  // fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w900,
+                  fontFamily: 'Nunito,'),
               // w900 shows how bold it will be
             ),
           ),
