@@ -349,43 +349,45 @@ class _MyAppSTFState extends State<MyAppSTF> {
         child: Center(
           // body: Center(
           child: Container(
-            // height: 100,
-            // width: 100,
-            padding: const EdgeInsets.all(10),
-            margin: const EdgeInsets.all(10),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Colors.blue,
-              border: Border.all(
-                color: Colors.green,
-                width: 5,
-                // Container aspect
-                //   border: Border(
-                //     bottom: BorderSide(
-                //       color: Colors.green,
-                //       width: 5,
-                //     ),
-                //     left: BorderSide(color: Colors.green, width: 5),
-                //     top: BorderSide(
-                //       color: Colors.green,
-                //       width: 5,
-                //     ),
-                //   ),
-                // ),
+              // height: 100,
+              // width: 100,
+              padding: const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.blue,
+                border: Border.all(
+                  color: Colors.green,
+                  width: 5,
+                  // Container aspect
+                  //   border: Border(
+                  //     bottom: BorderSide(
+                  //       color: Colors.green,
+                  //       width: 5,
+                  //     ),
+                  //     left: BorderSide(color: Colors.green, width: 5),
+                  //     top: BorderSide(
+                  //       color: Colors.green,
+                  //       width: 5,
+                  //     ),
+                  //   ),
+                  // ),
+                ),
               ),
-            ),
-            child: const Text(
-              'TechApostle with the doings',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 10,
-                  // fontWeight: FontWeight.bold,
-                  fontWeight: FontWeight.w900,
-                  fontFamily: 'Nunito,'),
-              // w900 shows how bold it will be
-            ),
-          ),
+              child: Image.asset( 
+              // child: const Text(
+              //   'TechApostle with the doings',
+              //   style: TextStyle(
+              //       color: Colors.white,
+              //       fontSize: 10,
+              //       // fontWeight: FontWeight.bold,
+              //       fontWeight: FontWeight.w900,
+              //       fontFamily: 'Nunito,'
+              //       ),
+              //   // w900 shows how bold it will be
+              // ),
+              ),
         ),
       ),
     );
