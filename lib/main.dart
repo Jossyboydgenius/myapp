@@ -348,9 +348,16 @@ class _MyAppSTFState extends State<MyAppSTF> {
           children: [
             Image.asset(
               'assets/images/dash.jpg',
-            )
-          ],
-        )
+            ),
+            const Text(
+                    'TechApostle with the doings',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 10,
+                        fontWeight: FontWeight.bold,
+                    ),
+            ),
+          ]
         //   body: Padding(
         //     padding: const EdgeInsets.all(8.0),
         //     child: Center(
