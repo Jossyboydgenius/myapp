@@ -353,7 +353,7 @@ class _MyAppSTFState extends State<MyAppSTF> {
         Text(
           'TechApostle with the doings $currentState',
           style: const TextStyle(
-              fontSize: 0, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
+              fontSize: 30, fontWeight: FontWeight.bold, fontFamily: 'Nunito'),
         ),
         // const Column(
         Row(
